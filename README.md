@@ -4,7 +4,7 @@ A modern, fully animated **full-stack portfolio website** built using the MERN s
 This project showcases my skills, projects, and experience with smooth UI animations, a newsletter subscription system, and email integration.
 
 🔗 Live Website: https://my-portfolio-mo00.onrender.com  
-🔗 Backend API: (your backend URL here)
+🔗 Deployment: Render
 
 ---
 
