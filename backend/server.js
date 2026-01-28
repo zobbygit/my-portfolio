@@ -20,10 +20,23 @@ app.use(express.urlencoded({ extended: true }));
 //   origin: ['http://localhost:3000', 'http://localhost:5173'],
 //   credentials: true
 // }));
+const allowedOrigins = [
+  'https://my-portfolio-mo00.onrender.com'
+  'http://localhost:5173',
+  'http://localhost:3000',
+];
+
 app.use(cors({
-  origin: true,
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS not allowed'));
+    }
+  },
   credentials: true
 }));
+
 // Routes
 app.use('/api/newsletter', newsletterRoutes);
 
