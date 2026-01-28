@@ -384,7 +384,7 @@ Technical Skills
         transition-all duration-300
         hover:scale-[1.07]
         hover:-rotate-1
-        hover:shadow-[0_35px_90px_${card.shadow}]
+        --tw-shadow: 0 35px 90px rgba(34,211,238,0.35);
       `}
     >
       {/* Glow layer */}
